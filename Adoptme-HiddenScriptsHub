@@ -3,7 +3,7 @@ local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Adopt-me [3.4]�
 OrionLib:MakeNotification({
 	Name = "Loading Script...",
 	Content = "Script will be loaded in 25-30 seconds | Note - Seconds Shown Here are not the exact loading time❗",
-	Image = "rbxassetid://18128238515",
+	Image = "rbxassetid://18170549235",
 	Time = 50
 })
 
