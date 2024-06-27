@@ -24,7 +24,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 
 local Tab = Window:MakeTab({
-    Name = "Dupe Eggs🥚",
+    Name = "Dupe Eggs 🥚",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -84,64 +84,8 @@ Time = <number> - The duration of the notfication.
 ]]
   	end    
 })
-Tab:AddParagraph("READ❗","The Feature - Dupe Eggs - Will Not Work if ur in a private server")
-Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsHubYT🥷")
-
-local Tab = Window:MakeTab({
-    Name = "Trade Scam🙈",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-Tab:AddTextbox({
-    Name = "Username",
-    Default = "Player",
-    TextDisappear = false,
-    Callback = function(Value)
-        
-    end      
-})
-
---[[
-Name = <string> - The name of the textbox.
-Default = <string> - The default value of the textbox.
-TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
-Callback = <function> - The function of the textbox.
-]]
-Tab:AddButton({
-	Name = "Freeze Trade To The Victim",
-	Callback = function()
-	OrionLib:MakeNotification({
-	Name = "Freeze Trade Enabled",
-	Content = "Take Out Your Pets The Victim Cant See",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
-]]
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-
-
-Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsHubYT🥷")
+Tab:AddParagraph("Not Working?❗","Dupe Eggs Not Working? Check if u are on a private server this probably causes the error.")
+Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsHubYT🎩")
 
 local Tab = Window:MakeTab({
     Name = "AutoFarm 🚜",
@@ -154,20 +98,19 @@ Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
-
+Tab:AddParagraph("Autofarm Source 🧑‍🌾","With Updated Features Autofarm Pony-Minigame And Bullride-Minigame Also With Petfarms And Baby Farms")
 Tab:AddButton({
-    Name = "[TrustedScript📄]Get AutoFarm Source ✅",
+    Name = "Click To Load AutoFarm Source 🚜",
     Callback = function()
               loadstring(game:HttpGet("https://raw.githubusercontent.com/JulHubz/JulHub/main/JulHub"))()
       end    
 })
-
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsHubYT🥷") 
+Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsHubYT🎩") 
 
 local Tab = Window:MakeTab({
     Name = "Dupe Pets 🔨",
@@ -182,10 +125,10 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 Tab:AddButton({
-	Name = "Equip Pets To Dupe",
+	Name = "Equip a pet u want to dupe❗",
 	Callback = function()
       		OrionLib:MakeNotification({
-	Name = "Pet Selector",
+	Name = "Selected Equipped Pets",
 	Content = "Equipped Pets Successfully Selected",
 	Image = "rbxassetid://4483345998",
 	Time = 5
@@ -201,7 +144,7 @@ Time = <number> - The duration of the notfication.
 })
 
 Tab:AddButton({
-	Name = "Click To Dupe Pets",
+	Name = "Click To Dupe Pets 🎯",
 	Callback = function()
 	OrionLib:MakeNotification({
 	Name = "Duping Pets...",
@@ -218,8 +161,8 @@ Time = <number> - The duration of the notfication.
 ]]
   	end    
 })
-Tab:AddParagraph("ReadMe❗","The Feature - Dupe Eggs - Will Not Work if ur in a private server this is because of player functions")
-Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, HiddenScriptsHubYT🥷")
+Tab:AddParagraph("Not Working?❗","Dupe Pets Not Working? Check if u are on a private server this probably causes the error.")
+Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, HiddenScriptsHubYT🎩")
 
 --[[
 Name = <string> - The name of the button.
@@ -244,13 +187,13 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 Tab:AddButton({
-    Name = "Get Infinite Bucks💸",
+    Name = "Click to load Infinite Bucks 💸",
     Callback = function()
               require(game:service'ReplicatedStorage'.Fsys).load("ClientData").update("money",(15999999984/16))
       end    
 })
 
-Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsYT🥷")
+Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsYT🎩")
 
 --[[
 Name = <string> - The name of the button.
@@ -258,7 +201,7 @@ Callback = <function> - The function of the button.
 ]]
 
 local Tab = Window:MakeTab({
-    Name = "MFR-NFR Changer 📦",
+    Name = "MFR-NFR 📦",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -306,21 +249,16 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsYT🥷")
+Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsYT🎩")
 
 
 local Tab = Window:MakeTab({
-    Name = "Info | Discord",
+    Name = "Errors/Bugs?❗",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-Tab:AddParagraph("My Discord server🎩","Join if u need help with anything also report bugs❗")
+Tab:AddParagraph("Private server Error❗","Being in a private server can cause alot of the main features of the script to not work please take this as a note if ur having problems with something not working this is probably the cause of it")
+Tab:AddParagraph("My Discord server 🎩","Please join my discord server if u need help with bugs/errors.")
 Tab:AddButton({
 	Name = "Copy Link To Discord Server 🎯",
 	Callback = function()
@@ -328,10 +266,13 @@ Tab:AddButton({
       		print("button pressed")
   	end    
 })
-
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
-Tab:AddParagraph("Readme❗","Some Features May Not Work If ur in a private server this is caused by lack of player functions")
-Tab:AddParagraph("Credits❗","Coded And Made All by HiddenScriptsHubYT🥷")
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
