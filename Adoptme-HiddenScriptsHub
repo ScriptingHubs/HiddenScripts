@@ -10,7 +10,7 @@ OrionLib:MakeNotification({
 --[[
 
 ]]
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/FallenScripts/main/FallenscriptsSource"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/HiddenScriptsYo"))()
 --[[
 Name = <string> - The name of the UI.
 HidePremium = <bool> - Whether or not the user details shows Premium status or not.
