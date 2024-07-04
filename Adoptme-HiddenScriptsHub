@@ -1,28 +1,14 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Adopt-me [3.4]♨️", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
-	Name = "Loading Script...",
-	Content = "Script will be loaded in 25-30 seconds | Note - Seconds Shown Here are not the exact loading time❗",
-	Image = "rbxassetid://18170549235",
-	Time = 50
+	Name = "Loading The Script..",
+	Content = "May Take 20-30 seconds this is not the exact lodaing time❗",
+	Image = "rbxassetid://4483345998",
+	Time = 5
 })
-
---[[
-
-]]
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/HiddenScriptsYo"))()
---[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
-
+wait(6)
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Adopt-me-[Ver-4.0]", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
     Name = "Dupe Eggs 🥚",
     Icon = "rbxassetid://4483345998",
