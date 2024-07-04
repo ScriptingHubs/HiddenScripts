@@ -99,7 +99,7 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 Tab:AddButton({
-	Name = "Equip the knife u want to dupe❗",
+	Name = "Equip knife to dupe 🔪",
 	Callback = function()
       		OrionLib:MakeNotification({
 	Name = "Selected Equipped Knife",
@@ -121,7 +121,7 @@ Tab:AddButton({
 	Name = "Click To Dupe Knives 🎯",
 	Callback = function()
 	OrionLib:MakeNotification({
-	Name = "Duping Pets...",
+	Name = "Duping Knives...",
 	Content = "Duping in Process..[Takes Around 1-2 minutes] Dont Leave The Game❗",
 	Image = "rbxassetid://4483345998",
 	Time = 120
@@ -169,3 +169,4 @@ Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
+
