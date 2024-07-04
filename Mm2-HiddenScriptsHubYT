@@ -102,8 +102,8 @@ Tab:AddButton({
 	Name = "Equip the knife u want to dupe❗",
 	Callback = function()
       		OrionLib:MakeNotification({
-	Name = "Selected Equipped Pets",
-	Content = "Equipped Pets Successfully Selected",
+	Name = "Selected Equipped Knife",
+	Content = "Equipped Knife Successfully Selected",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
