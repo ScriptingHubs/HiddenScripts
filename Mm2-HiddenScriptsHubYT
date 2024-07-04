@@ -70,10 +70,17 @@ Tab:AddButton({
 	Callback = function()
 OrionLib:MakeNotification({
 	Name = "Duping Gun....",
-	Content = "Duping is in process..[Takes around 1-2 minutes] Dont Leave The Game ❗",
+	Content = "Duping is in process..[Takes around 1-2 minutes] Dont leave the game❗",
 	Image = "rbxassetid://4483345998",
 	Time = 120
 })
+OrionLib:MakeNotification({
+	Name = "Read-[📕]",
+	Content = "if the gun still hasn't been duped this is because of private servers or the lack of players to dupe from",
+	Image = "rbxassetid://4483345998",
+	Time = 25
+})
+
 
 --[[
 Title = <string> - The title of the notification.
@@ -126,6 +133,12 @@ Tab:AddButton({
 	Image = "rbxassetid://4483345998",
 	Time = 120
 })
+    OrionLib:MakeNotification({
+	Name = "Read-[📕]",
+	Content = "if the gun still hasn't been duped this is because of private servers or the lack of players to dupe from",
+	Image = "rbxassetid://4483345998",
+	Time = 25
+})
 
 
 --[[
@@ -152,7 +165,7 @@ local Tab = Window:MakeTab({
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
-Tab:AddParagraph("My Discord server 🎩","Please join my discord server if u need help with bugs/errors.")
+Tab:AddParagraph("My Discord server 🎩"," Join my discord server if u need help with bugs/errors on the script i made u can also talk to improve the script more")
 Tab:AddButton({
 	Name = "Copy Link To Discord Server 🎯",
 	Callback = function()
@@ -169,4 +182,3 @@ Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
-
