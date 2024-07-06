@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Mm2 [1.0]-First Version", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Mm2 [2.0]-Summer Update🏄", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
 	Name = "Loading Script...",
 	Content = "Script will be loaded in 25-30 seconds | Note - Seconds Shown Here are not the exact loading time❗",
@@ -8,9 +8,9 @@ OrionLib:MakeNotification({
 })
 
 --[[
-
-]]
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/Mm2-HiddenScriptsHub"))()
+]]
+
 --[[
 Name = <string> - The name of the UI.
 HidePremium = <bool> - Whether or not the user details shows Premium status or not.
@@ -45,13 +45,13 @@ Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
-
+Tab:AddParagraph("Read Before Using❗","First Step is click to select ur equipped gun make sure u got a gun equipped this will not work if the first step has been skipped, Second Step and the final step is click the dupe button and wait 1-2 minutes")
 Tab:AddButton({
-	Name = "Equip Gun To Dupe 🔫",
+	Name = "Click to select Equipped-Gun 🔫",
 	Callback = function()
       		OrionLib:MakeNotification({
-	Name = "Gun Selector",
-	Content = "Equipped Gun Selected",
+	Name = "Gun Selected ❗",
+	Content = "The Equipped-Gun Has Been Successfully Selected",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -66,20 +66,21 @@ Time = <number> - The duration of the notfication.
 })
 
 Tab:AddButton({
-	Name = "Click To Dupe Gun 🎯",
+	Name = "Click To Dupe-Selected-Gun 🎯",
 	Callback = function()
 OrionLib:MakeNotification({
-	Name = "Duping Gun....",
-	Content = "Duping is in process..[Takes around 1-2 minutes] Dont leave the game❗",
+	Name = "Duping Guns...⏳",
+	Content = "Duping is in process-[Takes around 1-2 minutes]-Dont leave the game❗",
 	Image = "rbxassetid://4483345998",
 	Time = 120
 })
 OrionLib:MakeNotification({
 	Name = "Read-[📕]",
-	Content = "if the gun still hasn't been duped this is because of private servers or the lack of players to dupe from",
+	Content = "Please Check if u are on a public server this will not work on a server with no players",
 	Image = "rbxassetid://4483345998",
 	Time = 25
 })
+Tab:AddParagraph("Note❗","This Duping Process Can Only Dupe 2 items per Dupe-Process So Two Items Per 1-2 minutes❗But it is the only working dupe method🔨 ")
 
 
 --[[
@@ -92,7 +93,7 @@ Time = <number> - The duration of the notfication.
 })
 
 Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsHubYT🎩")
-
+Tab:AddParagraph("Note❗","This Duping Process Can Only Dupe 2 items per Dupe-Process So Two Items Per 1-2 minutes❗But it is the only working dupe method🔨 ")
 local Tab = Window:MakeTab({
     Name = "Dupe Knives 🔪",
     Icon = "rbxassetid://4483345998",
@@ -104,13 +105,13 @@ Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
-
+Tab:AddParagraph("Read Before Using❗","First Step is click to select ur equipped Knife make sure u got a Knife equipped this will not work if the first step has been skipped, Second Step and the final step is click the dupe button and wait 1-2 minutes")
 Tab:AddButton({
-	Name = "Equip knife to dupe 🔪",
+	Name = "Click to select Equipped-Knife 🔪",
 	Callback = function()
       		OrionLib:MakeNotification({
-	Name = "Selected Equipped Knife",
-	Content = "Equipped Knife Successfully Selected",
+	Name = "Selected Equipped Knife❗",
+	Content = "The Equipped-Knife Successfully Selected",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -125,20 +126,21 @@ Time = <number> - The duration of the notfication.
 })
 
 Tab:AddButton({
-	Name = "Click To Dupe Knives 🎯",
+	Name = "Click To Dupe-Selected-Knife 🎯",
 	Callback = function()
 	OrionLib:MakeNotification({
-	Name = "Duping Knives...",
-	Content = "Duping in Process..[Takes Around 1-2 minutes] Dont Leave The Game❗",
+	Name = "Duping Knives..⏳",
+	Content = "Duping is in process-[Takes Around 1-2 minutes] Dont Leave The Game❗",
 	Image = "rbxassetid://4483345998",
 	Time = 120
 })
     OrionLib:MakeNotification({
 	Name = "Read-[📕]",
-	Content = "if the gun still hasn't been duped this is because of private servers or the lack of players to dupe from",
+	Content = "Please Check if u are on a public server this will not work on a server with no players",
 	Image = "rbxassetid://4483345998",
 	Time = 25
 })
+
 
 
 --[[
@@ -150,7 +152,7 @@ Time = <number> - The duration of the notfication.
   	end    
 })
 Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, HiddenScriptsHubYT🎩")
-
+Tab:AddParagraph("Note❗","This Duping Process Can Only Dupe 2 items per Dupe-Process So Two Items Per 1-2 minutes❗But it is the only working dupe method🔨 ")
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
@@ -173,6 +175,8 @@ Tab:AddButton({
       		print("button pressed")
   	end    
 })
+Tab:AddParagraph("Read-[📕]","Please dont click the dupe buttons twice or multiple times this WILL cause errors❗")
+Tab:AddParagraph("Credits-⭐","All Coded And Made By HiddenScriptsHub-YT")
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
