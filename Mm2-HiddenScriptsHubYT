@@ -7,9 +7,8 @@ OrionLib:MakeNotification({
 	Time = 30
 })
 
---[[
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/Mm2-HiddenScriptsHub"))()
-]]
+
 
 --[[
 Name = <string> - The name of the UI.
