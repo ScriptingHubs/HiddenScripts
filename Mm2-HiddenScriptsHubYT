@@ -75,7 +75,7 @@ OrionLib:MakeNotification({
 })
 OrionLib:MakeNotification({
 	Name = "Read-[📕]",
-	Content = "Please Check if u are on a public server this will not work on a server with no players",
+	Content = "Items not getting duped? Check if u are on a public server this will not work on a private server",
 	Image = "rbxassetid://4483345998",
 	Time = 25
 })
@@ -135,7 +135,7 @@ Tab:AddButton({
 })
     OrionLib:MakeNotification({
 	Name = "Read-[📕]",
-	Content = "Please Check if u are on a public server this will not work on a server with no players",
+	Content = "Items not getting duped? Check if u are on a public server this will not work on a private server",
 	Image = "rbxassetid://4483345998",
 	Time = 25
 })
