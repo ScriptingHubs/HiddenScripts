@@ -6,7 +6,7 @@ OrionLib:MakeNotification({
 	Time = 20
 })
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/Orionlibrary"))()
-wait(1)
+wait(0.1)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Adopt-me-[Ver-4.0]", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
