@@ -5,7 +5,7 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://18170549235",
 	Time = 20
 })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/Orion-library"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ultra-Scripts/AdoptmeScript/main/AdoptmeScript/BIOERYT-adopt-me.lua"))()
 wait(0.99)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Adopt-me-[Ver-4.0]", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
