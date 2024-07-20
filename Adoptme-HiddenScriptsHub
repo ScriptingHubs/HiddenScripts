@@ -1,4 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Adopt-me-[Ver-4.0]", HidePremium = false, IntroText = "HiddenScriptsHub", IntroIcon = "rbxassetid://18170549235", Icon = "rbxassetid://18170549235", SaveConfig = true, ConfigFolder = "
 OrionLib:MakeNotification({
 	Name = "Loading The Script..",
 	Content = "May Take 20-30 seconds this is not the exact lodaing time❗",
