@@ -11,7 +11,7 @@ OrionLib:MakeNotification({
 
 getgenv().gui = false
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/Mm2-HiddenScriptsHubs-YT"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/orionlibSource?token=GHSAT0AAAAAACUXORCXG4POFX5QXIZFUMX6ZU3NNBQ"))()
 
 --[[
 Name = <string> - The name of the UI.
