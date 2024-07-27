@@ -1,12 +1,12 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Adopt-me-[Ver-4.0]", HidePremium = false, IntroText = "HiddenScriptsHub", IntroIcon = "rbxassetid://18170549235", Icon = "rbxassetid://18170549235", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩 Adopt me - [5.0]", HidePremium = false, IntroText = "HiddenScriptsHub", IntroIcon = "rbxassetid://18170549235", Icon = "rbxassetid://18170549235", SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
 	Name = "Loading The Script..",
 	Content = "May Take 20-30 seconds this is not the exact lodaing time❗",
 	Image = "rbxassetid://18170549235",
 	Time = 20
 })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/AdoptmeSourceOrionLibrary"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/HiddenScriptsHub-Adoptme"))()
 wait(1)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩-Adopt-me-[Ver-4.0]", HidePremium = false, IntroText = "HiddenScriptsHub", IntroIcon = "rbxassetid://18170549235", Icon = "rbxassetid://18170549235", SaveConfig = true, ConfigFolder = "OrionTest"})
@@ -73,31 +73,6 @@ Time = <number> - The duration of the notfication.
 })
 Tab:AddParagraph("Not Working?❗","Dupe Eggs Not Working? Check if u are on a private server this probably causes the error.")
 Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsHubYT🎩")
-
-local Tab = Window:MakeTab({
-    Name = "AutoFarm 🚜",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-Tab:AddParagraph("Autofarm Source 🧑‍🌾","With Updated Features Autofarm Pony-Minigame And Bullride-Minigame Also With Petfarms And Baby Farms")
-Tab:AddButton({
-    Name = "Click To Load AutoFarm Source 🚜",
-    Callback = function()
-              loadstring(game:HttpGet("https://raw.githubusercontent.com/JulHubz/JulHub/main/JulHub"))()
-      end    
-})
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddParagraph("Script Successfully Loaded❗","Enjoy The Script, Youtube is HiddenScriptsHubYT🎩") 
 
 local Tab = Window:MakeTab({
     Name = "Dupe Pets 🔨",
