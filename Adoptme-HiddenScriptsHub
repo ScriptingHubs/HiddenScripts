@@ -5,10 +5,8 @@ OrionLib:MakeNotification({
 	Content = "May Take 20-30 seconds this is not the exact lodaing time❗",
 	Image = "rbxassetid://18170549235",
 	Time = 20
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/OrionSource-LibrariesOZ"))()
-wait(1)
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+}
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/Adopt-me-HiddenScriptHubs')))()
 local Window = OrionLib:MakeWindow({Name = "HiddenScriptsHub🎩 Adopt me - [5.0]", HidePremium = false, IntroText = "HiddenScriptsHub", IntroIcon = "rbxassetid://18170549235", Icon = "rbxassetid://18170549235", SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
     Name = "Dupe Eggs 🥚",
