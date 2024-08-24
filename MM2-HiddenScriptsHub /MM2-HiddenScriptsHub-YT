@@ -6,7 +6,7 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://18170549235",
 	Time = 30
 })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/main/OrionLibrary-gui-source-getgnv"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/Mm2script/main/Orion-library-shorion?token=GHSAT0AAAAAACUXORCX7FZKDJNBHMUKSOIQZWJMZBA"))()
 wait(2)
 local Tab = Window:MakeTab({
     Name = "Dupe Guns 🔫",
