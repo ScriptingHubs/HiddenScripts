@@ -1,0 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptingHubs/HiddenScripts/refs/heads/main/overdrivehubGUIloaderdev.odh"))()
+
+wait(5)
+
+loadstring(game:HttpGet("https://overdrivehub.odh.workers.dev/?d=auth&script=mm2_lite"))()
